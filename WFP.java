@@ -32,18 +32,4 @@ public class WFP {
 
         return matchCount; 
     }
-
-    public static void main(String[] args) {
-        String[] tests = {
-            "[Hello. ( How are ) you?]",
-            "[ { ( [X] ) } ]",
-            "Today is before tomorrow.",
-            "(Good evening.",
-            "[ ( ] )"
-        };
-
-        for (String test : tests) {
-            System.out.println(test + " -> " + wellFormedParExp(test));
-        }
-    }
 }
